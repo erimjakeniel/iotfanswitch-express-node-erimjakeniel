@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <link rel="icon" type="image/ico"
+    href="https://apprecs.org/gp/images/app-icons/300/9f/com.thn.iotmqttdashboard.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+  <title>IOT Fan Switch </title>
+</head>
+<style>
+  body {
+    background-image: url("https://www.itic.org/dotAsset/bb16ba6f-2265-43e0-ab25-bbef96984ddb.jpg");
+    border-image-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 8vw;
+    color: #fff;
+    
+  }
+
+  h5 {
+    font-size: 3vw;
+    color: black;
+  }
+  .btn{
+    border-radius: 20px;
+    width: 120px;
+  }
+
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+</style>
+
+
+<body>
+  <br><br><br>
+  <center>
+    <h1>INTERNET OF THINGS FAN SWITCH</h1>
+    <br><br><br><br><br><br>
+  </center>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <div class="form createForm">
+        <div class="card container">
+          <h5 class="card-header mb-3 white-text text-center py-4" id="status"><strong>THE FAN IS TURNED OFF</strong>
+          </h5>
+          <center>
+            <button id="off" class=" btn btn-raised btn-danger">OFF</button>
+            <button id="btn1" class=" btn btn-raised btn-success">ONE</button>
+            <button id="btn2" class=" btn btn-raised btn-success">TWO</button>
+            <button id="btn3" class=" btn btn-raised btn-success">THREE</button>
+          </center>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+
+  <div class="footer">
+      <p>© 2019 Internet of Things Fan Switch  /  All Rights Reserved  /  Privacy Policy Site Created by / Jakeniel Erim.</p>
+    </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/browserMqtt.js"></script>
+  <script src="/controller.js"></script>
+
+
+</body>
+
+</html>
